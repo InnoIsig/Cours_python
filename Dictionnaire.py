@@ -5,6 +5,8 @@ Création du dictionnaire: dico = {} #vide
 Accès dans un dictionnaire :  print(deco[cle])
 ajout et modification dans le dictionnaire : dico[<cle>] = "<valeur>"
 suppression :
+copie du dictionnaire       : dico1 = {1:464, 2:744}
+                              dico2 = dico1.copy()
 """
 
 dico = {"nom":"Innocent", "ville":"Goma" }
@@ -35,3 +37,30 @@ if  "Innocent" in dico:
     print("oui je sui la")
 else:
     print("Non suis pas en l'interieur")
+
+#pour retourner la cle d'une valeu
+for key in dico.keys():
+     print(key)
+
+# Pour afficher les valeur
+for value in dico.values():
+    print(value)
+
+# Verification de chaque valeur
+for (k,v) in dico.items():
+    print(f"Cle : {k} -valeur {v}")
+
+dico2 =dico
+print(dico)
+print(dico2)
+
+dico["ok"] = "ok"
+print(dico)
+print(dico2)
+
+# paramettre nome
+def maFoction(**paramettre):
+   print(paramettre)
+
+maFoction(p= 234, nom = "innocent")
+
