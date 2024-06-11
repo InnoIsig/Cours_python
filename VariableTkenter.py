@@ -11,10 +11,10 @@ def update_label(*args):
     var_label.set(var_entry.get())
 
     if var_gender.get():
-        var_label_geder.set("ES-tu bien un Homme ?")
+        var_label_geder.set("Es-tu bien un Homme ?")
         print("C'est un Homme")
     else:
-        var_label_geder.set("ES-tu bien une Fememe ?")
+        var_label_geder.set("Es-tu bien une Femme ?")
         print("C'est une femme")
 
 # création et parametrage de la fenetre
